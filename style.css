@@ -1,5 +1,3 @@
-/* styles.css */
-
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +9,6 @@ body {
     background-color: #1a1a1a;
     color: #fff;
 }
-
 
 .hero {
     text-align: left;
@@ -50,8 +47,7 @@ body {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #ffffff;
-    
+    color: #ffffff;   
 }
 
 .subtitle {
@@ -82,6 +78,66 @@ body {
 .download-buttons a:hover {
     background-color: #21242B;
 }
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 10px; /* Reduz o padding em telas menores */
+        min-height: 500px; /* Ajusta a altura mínima */
+    }
+
+    .content-wrapper {
+        margin-left: 0; /* Remove a margem negativa */
+        max-width: 100%; /* Permite que o conteúdo utilize 100% da largura */
+    }
+
+    .logo {
+        font-size: 28px; /* Diminui o tamanho da logo */
+    }
+
+    .main-title {
+        font-size: 28px; /* Diminui o tamanho do título principal */
+    }
+
+    .subtitle {
+        font-size: 16px; /* Diminui o tamanho da legenda */
+    }
+
+    .download-buttons a {
+        font-size: 12px; /* Diminui o tamanho da fonte dos botões */
+        padding: 8px; /* Reduz o padding dos botões */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 5px; /* Aumenta o padding para maior espaço vertical */
+        min-height: 400px; /* Ajusta a altura mínima ainda mais */
+    }
+
+    .logo {
+        font-size: 24px; /* Diminui ainda mais o tamanho da logo */
+    }
+
+    .main-title {
+        font-size: 24px; /* Diminui ainda mais o tamanho do título principal */
+    }
+
+    .subtitle {
+        font-size: 14px; /* Diminui ainda mais o tamanho da legenda */
+    }
+
+    .download-buttons {
+        flex-direction: column; /* Muda a direção dos botões para coluna */
+    }
+
+    .download-buttons a {
+        width: 100%; /* Faz com que os botões ocupem 100% da largura */
+        font-size: 14px; /* Ajusta o tamanho da fonte dos botões */
+        padding: 10px; /* Ajusta o padding dos botões */
+    }
+}
+
 
 
 .info-section {
@@ -116,7 +172,49 @@ body {
     color: #bfbfbf;
 }
 
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column; /* Muda a direção do flex para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
 
+    .info-box {
+        width: 90%; /* Aumenta a largura da caixa de informação */
+        padding: 40px; /* Diminui o padding */
+        margin-bottom: 20px; /* Espaçamento entre as caixas */
+    }
+
+    .info-box h3 {
+        font-size: 22px; /* Diminui o tamanho da fonte do título */
+    }
+
+    .info-box p {
+        font-size: 14px; /* Diminui o tamanho da fonte do parágrafo */
+    }
+
+    .icon-card {
+        width: 150px; /* Diminui a largura do ícone */
+    }
+}
+
+@media (max-width: 480px) {
+    .info-box {
+        padding: 20px; /* Diminui ainda mais o padding em telas pequenas */
+    }
+
+    .info-box h3 {
+        font-size: 20px; /* Diminui mais o tamanho da fonte do título */
+    }
+
+    .info-box p {
+        font-size: 12px; /* Diminui ainda mais o tamanho da fonte do parágrafo */
+    }
+
+    .icon-card {
+        width: 120px; /* Diminui a largura do ícone ainda mais */
+    }
+}
 
 
 .section {
@@ -138,12 +236,12 @@ body {
     justify-content: space-between;
     gap: 20px;
     background: radial-gradient(circle, #e6a223, #0b1226, #000);
-    background-position: 10% 50%; /* posição do círculo*/
+    background-position: 10% 50%; /* posição do círculo */
     min-height: 600px;
     background-size: 5000px; /* Ajusta o tamanho do gradiente */
 }
 
-.text-content-oi{
+.text-content-oi {
     margin-left: 70px;
     flex: 1;
 }
@@ -164,7 +262,6 @@ body {
 
 .text-content {
     flex: 1;
-    
 }
 
 h2 {
@@ -179,7 +276,6 @@ ul {
 }
 
 ul li::before {
-    /*content: "↘    ";*/
     color: #cccccc; 
 }
 
@@ -187,6 +283,60 @@ p {
     font-size: 1.1em;
     color: #cccccc;
     margin-top: 10px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+    .section, .oi {
+        flex-direction: column; /* Muda a direção do flex para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .text-content-oi {
+        margin-left: 0; /* Remove a margem esquerda em telas menores */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .image-container {
+        margin-top: 20px; /* Espaçamento acima da imagem */
+        order: 2; /* Faz a imagem ficar abaixo do texto */
+    }
+
+    .text-content-oi {
+        order: 1; /* Faz o texto ficar acima da imagem */
+    }
+
+    .image-container img {
+        max-width: 80%; /* Limita a largura da imagem */
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8em; /* Diminui o tamanho do título */
+    }
+
+    p {
+        font-size: 1em; /* Diminui o tamanho do parágrafo */
+    }
+
+    ul {
+        line-height: 1.5em; /* Diminui o espaçamento entre as linhas */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5em; /* Diminui ainda mais o tamanho do título */
+    }
+
+    .section, .oi {
+        min-height: 400px; /* Reduz a altura mínima para telas muito pequenas */
+    }
+
+    .text-content-oi {
+        padding: 0 20px; /* Adiciona um padding horizontal */
+    }
 }
 
 
@@ -237,6 +387,64 @@ p {
     font-size: 14px;
 }
 
+/* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+    .testimonials {
+        padding: 80px 50px; /* Reduz o padding para telas menores */
+    }
+
+    .testimonials-title {
+        font-size: 36px; /* Diminui o tamanho do título */
+        margin-bottom: 30px; /* Ajusta a margem do título */
+    }
+
+    .testimonial-cards {
+        gap: 15px; /* Diminui o espaçamento entre os cartões */
+    }
+
+    .testimonial-card {
+        max-width: 90%; /* Aumenta a largura máxima dos cartões em telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-title {
+        font-size: 30px; /* Diminui ainda mais o tamanho do título */
+    }
+
+    .testimonial-card p {
+        font-size: 15px; /* Diminui o tamanho da fonte do texto */
+    }
+
+    .author {
+        font-size: 12px; /* Diminui o tamanho da fonte do autor */
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials {
+        padding: 60px 20px; /* Diminui o padding em telas muito pequenas */
+    }
+
+    .testimonials-title {
+        font-size: 24px; /* Diminui o tamanho do título ainda mais */
+    }
+
+    .testimonial-card {
+        padding: 15px; /* Reduz o padding do cartão */
+    }
+
+    .stars {
+        font-size: 16px; /* Diminui o tamanho das estrelas */
+    }
+
+    .testimonial-card p {
+        font-size: 14px; /* Diminui o tamanho do parágrafo */
+    }
+}
+
+
+
 
 
 .faq-container {
@@ -249,14 +457,12 @@ p {
     margin: 0 auto; 
 }
 
-
 .faq-title {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 20px;
 }
-
 
 .faq-item {
     border-top: none;
@@ -269,9 +475,6 @@ p {
     background-color: #222;
 }
 
-
-
-
 .faq-question {
     font-size: 1em;
     font-weight: 500;
@@ -280,28 +483,23 @@ p {
     align-items: center;
 }
 
-
 .faq-icon {
     font-size: 1.2em;
     color: #888;
     transition: transform 0.3s;
 }
 
-
 .faq-item.active .faq-icon {
     transform: rotate(180deg);
 }
-
 
 .faq-answer {
     display: none;
     padding: 10px 0;
     font-size: 0.9em;
     color: #bbb;
-    /*border-top: 1px solid #333;*/
     border: none;
 }
-
 
 .faq-item.active .faq-answer {
     display: block;
@@ -315,6 +513,55 @@ p {
     border-top: 5px solid #DFE6F5; 
     display: inline-block;
     margin-left: 10px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .faq-title {
+        font-size: 30px; /* Diminui o tamanho do título */
+    }
+
+    .faq-item {
+        padding: 12px; /* Diminui o padding dos itens */
+    }
+
+    .faq-question {
+        font-size: 0.9em; /* Diminui o tamanho da fonte da pergunta */
+    }
+
+    .faq-icon {
+        font-size: 1em; /* Diminui o tamanho do ícone */
+    }
+
+    .faq-answer {
+        font-size: 0.8em; /* Diminui o tamanho da fonte da resposta */
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-container {
+        padding: 20px; /* Reduz o padding para telas pequenas */
+    }
+
+    .faq-title {
+        font-size: 24px; /* Diminui o tamanho do título ainda mais */
+    }
+
+    .faq-item {
+        padding: 10px; /* Reduz o padding dos itens */
+    }
+
+    .faq-question {
+        font-size: 0.85em; /* Diminui ainda mais o tamanho da fonte da pergunta */
+    }
+
+    .faq-icon {
+        font-size: 0.9em; /* Diminui o tamanho do ícone */
+    }
+
+    .faq-answer {
+        font-size: 0.75em; /* Diminui ainda mais o tamanho da fonte da resposta */
+    }
 }
 
 .footer {
@@ -334,7 +581,6 @@ p {
     line-height: 1.5;
     margin-bottom: 20px;
 }
-
 
 .buttons {
     display: flex;
@@ -362,22 +608,15 @@ p {
 
 .google-play {
     background-color: #000000;
-    font-size: 12.5px; 
 }
 
-
 .app-store {
-    background-color: #000000; 
+    background-color: #000000;
 }
 
 .button:hover {
     opacity: 0.9;
     background-color: #21242B;
-}
-
-
-.app-store {
-    background-color: #000000;
 }
 
 .footer-text {
@@ -392,4 +631,48 @@ p {
     height: auto; 
     margin-right: 8px; 
     vertical-align: middle; 
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .footer h3 {
+        font-size: 1.5em; /* Diminui o tamanho do título */
+    }
+
+    .footer p {
+        font-size: 0.9em; /* Diminui o tamanho do texto */
+    }
+
+    .button {
+        width: 140px; /* Reduz a largura dos botões */
+        font-size: 0.75em; /* Diminui o tamanho da fonte dos botões */
+    }
+
+    .footer-text {
+        font-size: 0.7em; /* Diminui o tamanho do texto de rodapé */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px 0; /* Aumenta o padding para maior espaço vertical */
+    }
+
+    .footer h3 {
+        font-size: 1.3em; /* Diminui ainda mais o tamanho do título */
+    }
+
+    .footer p {
+        font-size: 0.8em; /* Diminui ainda mais o tamanho do texto */
+    }
+
+    .button {
+        width: 120px; /* Reduz ainda mais a largura dos botões */
+        font-size: 0.7em; /* Diminui ainda mais o tamanho da fonte dos botões */
+    }
+
+    .footer-text {
+        font-size: 0.6em; /* Diminui ainda mais o tamanho do texto de rodapé */
+        margin-top: 30px; /* Ajusta a margem superior */
+    }
 }
