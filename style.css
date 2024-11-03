@@ -1,0 +1,395 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Switzer Variable', sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+
+.hero {
+    text-align: left;
+    padding: 80px 20px;
+    background-image: url('home.png'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+    position: relative;
+}
+
+.content-wrapper {
+    max-width: 600px;
+    margin-left: -450px;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.icon-hero {
+    width: 30px; 
+    margin-top: -5px;
+    height: auto;
+    margin-right: 8px; 
+    vertical-align: middle; 
+}
+
+.main-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+    
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.download-buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: #000000;
+    padding: 10px 10px;
+    flex: 0.3;
+    border-radius: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.download-buttons a:hover {
+    background-color: #21242B;
+}
+
+
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: rgba(33, 36, 43, 1);
+}
+
+.info-box {
+    width: 45%;
+    background-color: #1a1a1a;
+    padding: 80px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.info-box h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.icon-card {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.info-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #bfbfbf;
+}
+
+
+
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: radial-gradient(circle, #002080, #0b1226, #171705);
+    background-position: 90% 50%; 
+    background-size: 5000px;
+    padding: 0;
+    margin: 0;
+    min-height: 600px;
+}
+
+.oi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: radial-gradient(circle, #e6a223, #0b1226, #000);
+    background-position: 10% 50%; /* posição do círculo*/
+    min-height: 600px;
+    background-size: 5000px; /* Ajusta o tamanho do gradiente */
+}
+
+.text-content-oi{
+    margin-left: 70px;
+    flex: 1;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.text-content {
+    flex: 1;
+    
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    line-height: 1.8em;
+    color: #cccccc;
+}
+
+ul li::before {
+    /*content: "↘    ";*/
+    color: #cccccc; 
+}
+
+p {
+    font-size: 1.1em;
+    color: #cccccc;
+    margin-top: 10px;
+}
+
+
+.testimonials {
+    padding: 120px 150px;
+    text-align: center;
+    background-color: rgba(33, 36, 43, 1);
+}
+
+.testimonials-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.testimonial-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: rgba(12, 12, 17, 1);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 300px;
+    width: 100%;
+    color: #ffffff;
+    text-align: left;
+}
+
+.stars {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.author {
+    color: #4e97d8;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+
+.faq-container {
+    width: 90%;
+    max-width: 700px;
+    padding: 30px;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; 
+}
+
+
+.faq-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.faq-item {
+    border-top: none;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+    background-color: #222;
+}
+
+
+
+
+.faq-question {
+    font-size: 1em;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.faq-icon {
+    font-size: 1.2em;
+    color: #888;
+    transition: transform 0.3s;
+}
+
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+
+
+.faq-answer {
+    display: none;
+    padding: 10px 0;
+    font-size: 0.9em;
+    color: #bbb;
+    /*border-top: 1px solid #333;*/
+    border: none;
+}
+
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.seta-para-baixo {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 5px solid #DFE6F5; 
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer {
+    background: radial-gradient(circle, #1c2b5a, #0b1226, #050a17);
+    text-align: center;
+    padding: 5px 5px;
+    color: #ffffff;
+}
+
+.footer h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 0.8em;
+    color: white;
+    background-color: #333;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 160px;
+    height: 48px;
+    font-weight: bold;
+    line-height: 1.0em;
+}
+
+.google-play {
+    background-color: #000000;
+    font-size: 12.5px; 
+}
+
+
+.app-store {
+    background-color: #000000; 
+}
+
+.button:hover {
+    opacity: 0.9;
+    background-color: #21242B;
+}
+
+
+.app-store {
+    background-color: #000000;
+}
+
+.footer-text {
+    font-size: 0.8em;
+    margin-top: 50px;
+    color: #666;
+}
+
+.icon {
+    width: 30px; 
+    margin-top: -5px;
+    height: auto; 
+    margin-right: 8px; 
+    vertical-align: middle; 
+}
